@@ -4,7 +4,7 @@ A simple ETL (Extract, Transform, Load) pipeline that fetches live weather data 
 
 ## What it does
 
-- **Extract** (`extract.py`) — calls the Open-Meteo API to get current weather data for a given location
+- **Extract** (`extract.py`) — calls the Open-Meteo API to get current weather data for a given location (supports multiple cities)
 - **Transform** (`transform.py`) — flattens the nested API response into a clean, simple structure
 - **Load** (`load.py`) — inserts the cleaned data into a PostgreSQL table, creating the table if it doesn't exist
 
